@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Domastic</title>
+
+  <!-- link icon tab -->
+  <link rel="icon" type="image" href="/assets/img/logo/Domastic-Logo-page.png" />
+  <!-- tailwind css generate -->
+  <link href="assets/css/output.css" rel="stylesheet">
+  <!-- font awesome icon -->
+  <script src="https://kit.fontawesome.com/904a972631.js" crossorigin="anonymous"></script>
+  <!-- font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/slider.css">
+
+</head>
+
+<body>
+
+  <!-- container -->
+
+  <!-- bg image -->
+  <img src="assets/img/polban.webp" alt="Background educaiton section"
+    class="w-full h-full object-cover -z-10 top-0 left-0 blur-sm fixed">
+
+  <!-- header / topbar -->
+  <div class="w-screen h-[5vh] md:h-[5vh] lg:h-[8vh] 2xl:h-[5vh] fixed flex items-center justify-between bg-[#F6F1E9] z-20">
+    <img src="assets/img/logo/Domastic-logo.png" alt="" class="h-full w-auto">
+    <div class="mr-5 flex gap-4">
+      <i class="fa-solid fa-sun text-xl transition-all cursor-pointer text-[#4F200D] hover:text-[#FF9A00]"></i>
+      <i class="fa-solid fa-bars text-xl transition-all cursor-pointer text-[#4F200D] hover:text-[#FF9A00]"
+        id="btn-open-sidebar"></i>
+    </div>
+  </div>
+
+  <!-- sidebar -->
+  <div class="lg:w-[40vh] 2xl:w-[30vh] h-screen bg-[#E5D0AC] fixed top-0 right-0 z-30" id="sidebar">
+    <div class="flex items-center justify-between ps-3 pe-4 pt-10">
+      <div>
+        <h1 class="text-xl font-bold ms-2 text-[#4F200D]">Ridho Sulistyo S</h1>
+        <h2 h2 class="text-md font-semibold ms-2 text-[#4F200D]">Web Developer</h2>
+      </div>
+      <i class="fa-solid fa-xmark text-3xl cursor-pointer text-[#4F200D] transition-all hover:text-[#FF9A00]"
+        id="btn-close-sidebar"></i>
+    </div>
+
+    <ul class="mt-5 flex flex-col gap-0">
+      <li class="ps-5 w-full h-[3rem] flex items-center"><a href="#home"
+          class="text-[#4F200D] transition-all hover:text-[#FF9A00]">Home</a></li>
+      <li class="ps-5 w-full h-[3rem] flex items-center"><a href="#about"
+          class="text-[#4F200D] transition-all hover:text-[#FF9A00]">About</a></li>
+      <li class="ps-5 w-full h-[3rem] flex items-center"><a href="#education"
+          class="text-[#4F200D] transition-all hover:text-[#FF9A00]">Education</a></li>
+      <li class="ps-5 w-full h-[3rem] flex items-center"><a href="#portfolio"
+          class="text-[#4F200D] transition-all hover:text-[#FF9A00]">Portfolio</a></li>
+      <li class="ps-5 w-full h-[3rem] flex items-center"><a href="#contact"
+          class="text-[#4F200D] transition-all hover:text-[#FF9A00]">Contact</a></li>
+    </ul>
+
+    <div class="w-full h-auto flex items-center justify-start gap-3 mt-3 ms-5">
+      <a href="https://www.instagram.com/riidhooss" target="_blank"
+        class="text-2xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ridhosulistyo1302@gmail.com" target="_blank"
+        class="text-2xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://x.com/poewfearly" target="_blank"
+        class="text-2xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://github.com/Ridhoss" target="_blank"
+        class="text-2xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ridhoss" target="_blank"
+        class="text-2xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://gitlab.com/Ridhoss" target="_blank"
+        class="text-2xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-gitlab"></i></a>
+    </div>
+
+    <div class="h-full flex items-start justify-center flex-col p-4">
+      <h1 class="text-2xl font-bold text-[#4F200D]">Poewfearly</h1>
+      <p class="text-[#4F200D] text-sm">© 2025 Domastic. All rights reserved.</p>
+    </div>
+  </div>
+
+  <!-- home section -->
+  <section class="w-full h-screen bg-[#F6F1E9] flex items-center justify-center" id="home">
+    <h1 class="home-text w-[70%] text-5xl lg:text-7xl 2xl:text-8xl text-center text-[#FF9A00] font-bold tracking-normal">Welcome to my
+      website, Let me introduce myself as a <span class="text-[#4F200D]">Frontend Developer.</span></h1>
+  </section>
+
+  <!-- about section -->
+  <section class="w-full h-screen bg-[#FFF] flex flex-col-reverse md:flex-row items-center justify-start" id="about">
+    <div class="w-full md:w-[50%] h-full flex flex-col items-start justify-start md:justify-center ps-10 md:ps-20">
+      <h1 class="about-text-1 text-3xl lg:text-5xl 2xl:text-6xl font-bold tracking-wide text-[#4F200D]">I'm <span class="text-[#FF9A00]">Ridho Sulistyo
+          S</span>
+        <br>a Frontend Developer
+      </h1>
+      <p class="about-text-2 mt-4 lg:mt-3 2xl:mt-5 text-sm md:text-md 2xl:text-xl text-[#4F200D]">I am a frontend developer, I graduated from SMK TI
+        Pembangunan Cimahi, and currently I am studying at Bandung State Polytechnic majoring in Informatics
+        Engineering.</p>
+      <div class="about-social-media w-full h-auto flex items-center justify-start gap-3 mt-3">
+        <a href="https://www.instagram.com/riidhooss" target="_blank"
+          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ridhosulistyo1302@gmail.com" target="_blank"
+          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://x.com/poewfearly" target="_blank"
+          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://github.com/Ridhoss" target="_blank"
+          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ridhoss" target="_blank"
+          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://gitlab.com/Ridhoss" target="_blank"
+          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-gitlab"></i></a>
+      </div>
+    </div>
+    <div class="w-full md:w-[50%] h-full flex items-center justify-center">
+      <div
+        class="about-image w-[80vw] md:w-[30vw] h-[50vw] md:h-[30vw] bg-[#FF9A00] rounded-3xl flex items-center justify-center shadow-[#FF9A00] shadow-2xl">
+        <img src="assets/img/dormv.png" alt="Photo Profile" class="w-full h-full object-contain">
+      </div>
+    </div>
+  </section>
+
+  <!-- education section -->
+  <section class="w-full h-screen relative overflow-hidden flex flex-col items-center justify-start pt-30" id="education">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="absolute left-0 -top-5 lg:-top-10 z-10">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,128L60,122.7C120,117,240,107,360,90.7C480,75,600,53,720,80C840,107,960,181,1080,202.7C1200,224,1320,192,1380,176L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+      </path>
+    </svg>
+    <div class="w-full bg-gray-700 h-screen opacity-80 -z-10 absolute top-0"></div>
+
+    <h1 class="title-education text-white text-4xl lg:text-5xl 2xl:text-6xl font-extrabold uppercase tracking-wide mt-2 lg:mt-6 2xl:mt-10 z-10">Education</h1>
+
+    <!-- card education -->
+    <div class="w-full h-full flex flex-col lg:flex-row items-center justify-evenly mt-0 lg:mt-3">
+
+      <div
+        class="card-education-1 w-[80vw] md:w-[50vw] lg:w-[35vw] h-[35vh] md:h-[35vh] lg:h-[55vh] bg-white rounded-2xl overflow-hidden border-4 border-gray-700 shadow-xl shadow-gray-800 relative">
+        <div class="w-full h-[50%] md:h-[60%] relative">
+          <img src="assets/img/smkti.jpg" alt="SMK TI Pembangunan Cimahi" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gray-700 opacity-70"></div>
+          <img src="assets/img/logo/logo-ti.png" alt="SMK TI Pembangunan Cimahi"
+            class="absolute w-[30%] h-auto top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+        </div>
+        <h1 class="text-lg lg:text-xl 2xl:text-3xl font-extrabold uppercase text-center mt-5 tracking-normal text-gray-700">SMK TI Pembangunan
+          Cimahi</h1>
+        <h2 class="ms-4 lg:mt-3 2xl:mt-5 text-sm lg:text-md 2xl:text-xl font-bold text-gray-700">Rekayasa Perangkat Lunak (RPL)</h2>
+        <p class="ms-4 mt-0 text-sm lg:text-md 2xl:text-xl text-gray-700">2021 - 2023</p>
+        <a href="https://www.smktipembangunan.sch.id" target="_blank"
+          class="text-sm 2xl:text-lg absolute bottom-5 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+          More</a>
+      </div>
+
+      <div
+        class="card-education-2 w-[80vw] md:w-[50vw] lg:w-[35vw] h-[35vh] md:h-[35vh] lg:h-[55vh] bg-white rounded-2xl overflow-hidden border-4 border-gray-700 shadow-xl shadow-gray-800 relative">
+        <div class="w-full h-[50%] md:h-[60%] relative">
+          <img src="assets/img/polban.webp" alt="Politeknik Negeri Bandung" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gray-700 opacity-70"></div>
+          <img src="assets/img/logo/polban.png" alt="Politeknik Negeri Bandung"
+            class="absolute w-[30%] h-auto top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+        </div>
+        <h1 class="text-lg lg:text-xl 2xl:text-3xl font-extrabold uppercase text-center mt-5 tracking-normal text-gray-700">Politeknik Negeri
+          Bandung</h1>
+        <h2 class="ms-4 lg:mt-3 2xl:mt-5 text-sm lg:text-md 2xl:text-xl font-bold text-gray-700">D3 Teknik Informatika</h2>
+        <p class="ms-4 mt-0 text-sm lg:text-md 2xl:text-xl text-gray-700">2024 - Now</p>
+        <a href="https://www.polban.ac.id" target="_blank"
+          class="lg:text-sm 2xl:text-lg absolute bottom-5 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+          More</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- experience -->
+  <section class="w-full h-screen relative flex flex-col-reverse lg:flex-row">
+    <div class="w-full bg-gray-700 h-screen opacity-80 -z-10 absolute top-0"></div>
+
+    <div class="card-experience w-screen lg:w-[60%] h-full flex flex-col items-center lg:justify-center justify-start gap-10 p-5 md:p-10">
+
+      <div
+        class="card-experience-1 w-full h-[20vh] bg-white rounded-xl flex items-center px-10 border-3 border-gray-700 shadow-xl shadow-gray-800 relative">
+        <img src="assets/img/logo/uwu.png" alt="Institute Teknologi Bandung (ITB)" class="h-[60%] md:h-[80%] w-auto">
+        <div class="ms-10">
+          <h1 class="text-md lg:text-2xl 2xl:text-3xl font-extrabold">Frontend Developer</h1>
+          <h2 class="text-sm lg:text-xl 2xl:text-2xl font-bold">Nolf.dev Team</h2>
+          <h3 class="text-sm lg:text-md 2xl:text-lg">Freelance</h3>
+          <p class="text-sm g:text-md 2xl:text-lg">2024 - Now</p>
+        </div>
+      </div>
+
+      <div
+        class="card-experience-2 w-full h-[20vh] bg-white rounded-xl flex items-center px-10 border-3 border-gray-700 shadow-xl shadow-gray-800 relative">
+        <img src="assets/img/logo/Logo_Institut_Teknologi_Bandung.png" alt="Institute Teknologi Bandung (ITB)"
+          class="h-[60%] md:h-[80%] w-auto">
+        <div class="ms-10">
+          <h1 class="text-md lg:text-2xl 2xl:text-3xl font-extrabold">Information Technology Assistant</h1>
+          <h2 class="text-sm lg:text-xl 2xl:text-2xl font-bold">Institute Teknologi Bandung (ITB)</h2>
+          <h3 class="text-sm lg:text-md 2xl:text-lg">Internship</h3>
+          <p class="text-sm lg:text-md 2xl:text-lg">2024 - 2024</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="w-screen lg:w-[40%] h-[20vh] lg:h-full flex items-center justify-center">
+      <h1 class="title-experience text-center text-white text-4xl lg:text-5xl 2xl:text-6xl font-bold uppercase">Experience</h1>
+    </div>
+
+  </section>
+
+  <!-- skills -->
+  <section class="w-full h-full pb-10 md:pb-0 md:h-screen relative pt-10 flex flex-col items-center justify-start">
+    <div class="w-full bg-gray-700 h-screen opacity-80 -z-10 absolute top-0"></div>
+
+    <h1 class="skills-title text-white text-4xl lg:text-5xl 2xl:text-6xl font-extrabold uppercase tracking-wide mt-5">Skills</h1>
+
+    <div class="w-full h-full flex flex-col lg:flex-row items-center lg:items-start">
+      <div class="skills-card-language w-full lg:w-[60%]">
+        <h1 class="text-white text-xl md:text-2xl mt-10 md:mt-20 text-center font-bold">Programming Language</h1>
+        <!-- container image logo -->
+        <div class="w-full h-auto mt-10 px-2 md:px-10 flex items-start justify-center lg:justify-start gap-2 md:gap-5 flex-wrap">
+          <img src="assets/img/logo/prog/html.png" alt="html" class="w-[8vw] lg:w-[5vw] h-auto rounded">
+          <img src="assets/img/logo/prog/css.png" alt="css" class="w-[8vw] lg:w-[5vw] h-aut roundedo">
+          <img src="assets/img/logo/prog/js.png" alt="js" class="w-[8vw] lg:w-[5vw] h-auto rounded">
+          <img src="assets/img/logo/prog/bootstrap.png" alt="bootstrap" class="w-[8vw] lg:w-[5vw] h-auto rounded">
+          <img src="assets/img/logo/prog/tailwind.png" alt="tailwind" class="w-[8vw] lg:w-[5vw] h-auto rounded">
+          <img src="assets/img/logo/prog/laravel.png" alt="laravel" class="w-[8vw] lg:w-[5vw] h-auto rounded">
+          <img src="assets/img/logo/prog/java.webp" alt="java" class="w-[8vw] lg:w-[5vw] h-auto rounded">
+          <img src="assets/img/logo/prog/php.png" alt="php" class="w-[8vw] lg:w-[5vw] h-auto rounded">
+          <img src="assets/img/logo/prog/react.png" alt="react" class="w-[8vw] lg:w-[5vw] h-auto rounded">
+          <img src="assets/img/logo/prog/MySQL.png" alt="MySQL" class="w-[8vw] lg:w-[5vw] h-auto rounded">
+          <img src="assets/img/logo/prog/nuxt.svg" alt="nuxt" class="w-[8vw] lg:w-[5vw] h-auto rounded">
+          <img src="assets/img/logo/prog/typescript.png" alt="typescript" class="w-[8vw] lg:w-[5vw] h-auto rounded">
+        </div>
+      </div>
+
+      <div class="w-full lg:w-[40%] h-full flex items-center justify-center">
+        <!-- card skills -->
+        <div
+          class="skills-card mt-5 lg:mt-0 w-[80%] md:w-[70%] lg:w-[60%] h-auto bg-white rounded-2xl p-10 flex flex-col gap-1 lg:gap-2 2xl:gap-5 justify-center border-3 border-gray-700 shadow-xl shadow-gray-800">
+
+          <div>
+            <span class="font-bold lg:text-md 2xl:text-xl">Communication</span>
+            <div class="w-full bg-gray-200 rounded-full lg:h-6 mt-3 lg:mt-2 2xl:mt-3">
+              <div class="skills-1 bg-red-600 lg:h-6 rounded-full text-center text-white text-sm lg:text-xs 2xl:text-sm font-medium leading-6"
+                style="width: 0%;">
+                60%
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <span class="font-bold lg:text-md 2xl:text-xl">Problem Solving</span>
+            <div class="w-full bg-gray-200 rounded-full lg:h-6 mt-3 lg:mt-2 2xl:mt-3">
+              <div class="skills-2 bg-green-600 lg:h-6 rounded-full text-center text-white text-sm lg:text-xs 2xl:text-sm font-medium leading-6"
+                style="width: 0%;">
+                80%
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <span class="font-bold lg:text-md 2xl:text-xl">Team Work</span>
+            <div class="w-full bg-gray-200 rounded-full lg:h-6 mt-3 lg:mt-2 2xl:mt-3">
+              <div class="skills-3 bg-blue-600 lg:h-6 rounded-full text-center text-white text-sm lg:text-xs 2xl:text-sm font-medium leading-6"
+                style="width: 0%;">
+                80%
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <span class="font-bold lg:text-md 2xl:text-xl">Leadership</span>
+            <div class="w-full bg-gray-200 rounded-full lg:h-6 mt-3 lg:mt-2 2xl:mt-3">
+              <div class="skills-4 bg-yellow-600 lg:h-6 rounded-full text-center text-white text-sm lg:text-xs 2xl:text-sm font-medium leading-6"
+                style="width: 0%;">
+                70%
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <span class="font-bold lg:text-md 2xl:text-xl">Discipline and responsibility</span>
+            <div class="w-full bg-gray-200 rounded-full lg:h-6 mt-3 lg:mt-2 2xl:mt-3">
+              <div class="skills-5 bg-cyan-600 lg:h-6 rounded-full text-center text-white text-sm lg:text-xs 2xl:text-sm font-medium leading-6"
+                style="width: 0%;">
+                90%
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <span class="font-bold lg:text-md 2xl:text-xl">Time Management</span>
+            <div class="w-full bg-gray-200 rounded-full lg:h-6 mt-3 lg:mt-2 2xl:mt-3">
+              <div class="skills-6 bg-purple-600 lg:h-6 rounded-full text-center text-white text-sm lg:text-xs 2xl:text-sm font-medium leading-6"
+                style="width: 0%;">
+                75%
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- portfolio -->
+  <section class="w-full h-auto md:h-screen bg-white flex flex-col" id="portfolio">
+    <h1 class="portfolio-title text-center text-4xl lg:text-5xl 2xl:text-6xl font-extrabold uppercase mt-20 text-[#4F200D]">Portfolio</h1>
+    
+    <div class="md:hidden relative flex flex-col gap-5 items-center justify-center mt-10">
+      <div class="w-[80vw] h-[80vw] relative bg-white border-3 border-gray-800 rounded-xl overflow-hidden shadow-2xl shadow-gray-800"
+          style="--position:1;">
+          <img src="/assets/img/aplication/pre1.jpg" alt="Aplication" class="w-full h-auto object-cover">
+          <div class="px-5 mt-3">
+            <h1 class="text-lg font-bold">Bioskop Ticketing Aplication</h1>
+            <p>2022</p>
+            <a href="https://github.com/Ridhoss/Bioskop.git" target="_blank"
+              class="absolute bottom-4 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+              More</a>
+          </div>
+        </div>
+
+        <div class="w-[80vw] h-[80vw] relative bg-white border-3 border-gray-800 rounded-xl overflow-hidden shadow-2xl shadow-gray-800"
+          style="--position:2;">
+          <img src="/assets/img/aplication/pre8.jpg" alt="Aplication" class="w-full h-auto object-cover">
+          <div class="px-5 mt-3">
+            <h1 class="text-lg font-bold">Library book management application</h1>
+            <p>2023</p>
+            <a href="https://github.com/Ridhoss/perpustakaan-SMK-TIP.git" target="_blank"
+              class="absolute bottom-4 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+              More</a>
+          </div>
+        </div>
+
+        <div class="w-[80vw] h-[80vw] relative bg-white border-3 border-gray-800 rounded-xl overflow-hidden shadow-2xl shadow-gray-800"
+          style="--position:3;">
+          <img src="/assets/img/aplication/pre5.jpg" alt="Aplication" class="w-full h-auto object-cover">
+          <div class="px-5 mt-3">
+            <h1 class="text-lg font-bold w-80">Management Photo application</h1>
+            <p>2023</p>
+            <a href="https://github.com/Ridhoss/Galeri-PoewArt.git" target="_blank"
+              class="absolute bottom-4 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+              More</a>
+          </div>
+        </div>
+
+        <div class="w-[80vw] h-[80vw] relative bg-white border-3 border-gray-800 rounded-xl overflow-hidden shadow-2xl shadow-gray-800"
+          style="--position:4;">
+          <img src="/assets/img/aplication/pre11.jpg" alt="Aplication" class="w-full h-auto object-cover">
+          <div class="px-5 mt-3">
+            <h1 class="text-lg font-bold">Idhosukahewan Company Profile</h1>
+            <p>2024</p>
+            <a href="https://idhosukahewan.com" target="_blank"
+              class="absolute bottom-4 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+              More</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="hidden md:block portfolio-slider wrapper mt-20 lg:mt-10 2xl:mt-30">
+      <div class="slider">
+
+        <div class="box-project bg-white border-3 border-gray-800 rounded-xl overflow-hidden shadow-2xl shadow-gray-800"
+          style="--position:1;">
+          <img src="/assets/img/aplication/pre1.jpg" alt="Aplication" class="w-full h-auto object-cover">
+          <div class="px-5 mt-3">
+            <h1 class="text-lg font-bold">Bioskop Ticketing Aplication</h1>
+            <p>2022</p>
+            <a href="https://github.com/Ridhoss/Bioskop.git" target="_blank"
+              class="absolute bottom-4 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+              More</a>
+          </div>
+        </div>
+
+        <div class="box-project bg-white border-3 border-gray-800 rounded-xl overflow-hidden shadow-2xl shadow-gray-800"
+          style="--position:2;">
+          <img src="/assets/img/aplication/pre8.jpg" alt="Aplication" class="w-full h-auto object-cover">
+          <div class="px-5 mt-3">
+            <h1 class="text-lg font-bold">Library book management application</h1>
+            <p>2023</p>
+            <a href="https://github.com/Ridhoss/perpustakaan-SMK-TIP.git" target="_blank"
+              class="absolute bottom-4 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+              More</a>
+          </div>
+        </div>
+
+        <div class="box-project bg-white border-3 border-gray-800 rounded-xl overflow-hidden shadow-2xl shadow-gray-800"
+          style="--position:3;">
+          <img src="/assets/img/aplication/pre5.jpg" alt="Aplication" class="w-full h-auto object-cover">
+          <div class="px-5 mt-3">
+            <h1 class="text-lg font-bold w-80">Management Photo application</h1>
+            <p>2023</p>
+            <a href="https://github.com/Ridhoss/Galeri-PoewArt.git" target="_blank"
+              class="absolute bottom-4 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+              More</a>
+          </div>
+        </div>
+
+        <div class="box-project bg-white border-3 border-gray-800 rounded-xl overflow-hidden shadow-2xl shadow-gray-800"
+          style="--position:4;">
+          <img src="/assets/img/aplication/pre11.jpg" alt="Aplication" class="w-full h-auto object-cover">
+          <div class="px-5 mt-3">
+            <h1 class="text-lg font-bold">Idhosukahewan Company Profile</h1>
+            <p>2024</p>
+            <a href="https://idhosukahewan.com" target="_blank"
+              class="absolute bottom-4 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+              More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery -->
+  <section class="w-full h-full bg-white flex flex-col pb-20">
+    <h1 class="gallery-title text-center text-4xl lg:text-5xl 2xl:text-6xl font-extrabold uppercase mt-20 text-[#4F200D]">Aplication Gallery</h1>
+    <div class="gallery-photo w-full h-full flex items-start justify-evenly mt-10 lg:mt-10 2xl:mt-20 flex-wrap">
+      <img src="assets/img/aplication/pre1.jpg" alt="App Photo" class="w-[80%] md:w-[30%] h-auto rounded-xl my-5">
+      <img src="assets/img/aplication/pre2.jpg" alt="App Photo" class="w-[80%] md:w-[30%] h-auto rounded-xl my-5">
+      <img src="assets/img/aplication/pre3.jpg" alt="App Photo" class="w-[80%] md:w-[30%] h-auto rounded-xl my-5">
+      <img src="assets/img/aplication/pre4.jpg" alt="App Photo" class="w-[80%] md:w-[30%] h-auto rounded-xl my-5">
+      <img src="assets/img/aplication/pre5.jpg" alt="App Photo" class="w-[80%] md:w-[30%] h-auto rounded-xl my-5">
+      <img src="assets/img/aplication/pre6.jpg" alt="App Photo" class="w-[80%] md:w-[30%] h-auto rounded-xl my-5">
+      <img src="assets/img/aplication/pre7.jpg" alt="App Photo" class="w-[80%] md:w-[30%] h-auto rounded-xl my-5">
+      <img src="assets/img/aplication/pre8.jpg" alt="App Photo" class="w-[80%] md:w-[30%] h-auto rounded-xl my-5">
+      <img src="assets/img/aplication/pre9.jpg" alt="App Photo" class="w-[80%] md:w-[30%] h-auto rounded-xl my-5">
+      <img src="assets/img/aplication/pre10.jpg" alt="App Photo" class="w-[80%] md:w-[30%] h-auto rounded-xl my-5">
+      <img src="assets/img/aplication/pre11.jpg" alt="App Photo" class="w-[80%] md:w-[30%] h-auto rounded-xl my-5">
+      <img src="assets/img/aplication/pre12.jpg" alt="App Photo" class="w-[80%] md:w-[30%] h-auto rounded-xl my-5">
+      <img src="assets/img/aplication/pre13.jpg" alt="App Photo" class="w-[80%] md:w-[30%] h-auto rounded-xl my-5">
+    </div>
+  </section>
+
+  <div class="w-full h-full md:h-60 2xl:h-70 bg-white overflow-hidden">
+    <div class="footer w-full h-full bg-[#F6F1E9] px-5 md:px-10 lg:px-30 flex flex-col md:flex-row items-center justify-between" id="contact">
+      <div class="h-full">
+        <h1 class="text-2xl lg:text-3xl font-extrabold pt-10 text-[#4F200D]">Contact Me</h1>
+        <p class="text-sm lg:text-md text-[#4F200D]">Feel free to reach out for collaborations or just a friendly hello!</p>
+        <ul class="ms-4 mt-3 flex flex-col gap-0 lg:gap-1 h-[50%] w-full flex-wrap pb-2">
+          <li><a href="https://www.instagram.com/riidhooss" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] transition-all hover:text-[#FF9A00]">Instagram</a></li>
+          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=ridhosulistyo1302@gmail.com" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] transition-all hover:text-[#FF9A00]">Email</a></li>
+          <li><a href="https://github.com/Ridhoss" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] transition-all hover:text-[#FF9A00]">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/ridhoss" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] transition-all hover:text-[#FF9A00]">LinkedIn</a></li>
+          <li><a href="https://x.com/poewfearly" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] transition-all hover:text-[#FF9A00]">X / Twitter</a></li>
+          <li><a href="https://gitlab.com/Ridhoss" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] transition-all hover:text-[#FF9A00]">GitLab</a></li>
+        </ul>
+      </div>
+      <div class="h-full mt-5 mb-5 md:mt-0 md:mb-0 flex items-center md:items-end justify-center flex-col">
+        <h1 class="text-xl md:text-3xl font-bold text-[#4F200D]">Poewfearly</h1>
+        <p class="text-sm md:text-lg text-[#4F200D]">© 2025 Domastic. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- script js -->
+  <script src="assets/js/script.js" type="module"></script>
+</body>
+
+</html>
