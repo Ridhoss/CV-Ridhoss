@@ -30,11 +30,14 @@
     class="w-full h-full object-cover -z-10 top-0 left-0 blur-sm fixed">
 
   <!-- header / topbar -->
-  <div class="w-screen h-[5vh] md:h-[5vh] lg:h-[8vh] 2xl:h-[5vh] fixed flex items-center justify-between bg-[#F6F1E9] z-20">
-    <img src="assets/img/logo/Domastic-logo.png" alt="" class="h-full w-auto">
-    <div class="mr-5 flex gap-4">
-      <i class="fa-solid fa-sun text-xl transition-all cursor-pointer text-[#4F200D] hover:text-[#FF9A00]"></i>
-      <i class="fa-solid fa-bars text-xl transition-all cursor-pointer text-[#4F200D] hover:text-[#FF9A00]"
+  <div class="w-screen h-[5vh] md:h-[5vh] lg:h-[8vh] 2xl:h-[5vh] fixed flex items-center justify-between bg-[#F6F1E9] dark:bg-[#181818] transition-colors duration-500 z-20">
+    <img src="assets/img/logo/Domastic-logo.png" alt="" class="block dark:hidden h-full w-auto">
+    <img src="assets/img/logo/Domastic-logo-white.png" alt="" class="hidden dark:block h-full w-auto">
+    <div class="mr-10 flex gap-4">
+
+      <i class="fa-solid fa-sun text-xl cursor-pointer text-[#4F200D] dark:text-[#fff] transition-colors duration-500 hover:text-[#FF9A00]" id="btn-light"></i>
+      <i class="fa-solid fa-moon text-xl cursor-pointer text-[#4F200D] dark:text-[#fff] transition-colors duration-500 hover:text-[#FF9A00]" id="btn-dark"></i>
+      <i class="fa-solid fa-bars text-xl transition-all cursor-pointer text-[#4F200D] dark:text-[#fff] duration-50 hover:text-[#FF9A00]"
         id="btn-open-sidebar"></i>
     </div>
   </div>
@@ -78,46 +81,46 @@
         class="text-2xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-gitlab"></i></a>
     </div>
 
-    <div class="h-full flex items-start justify-center flex-col p-4">
+    <div class="h-full flex items-start justify-center flex-col p-4 pb-20 md:pb-0">
       <h1 class="text-2xl font-bold text-[#4F200D]">Poewfearly</h1>
       <p class="text-[#4F200D] text-sm">© 2025 Domastic. All rights reserved.</p>
     </div>
   </div>
 
   <!-- home section -->
-  <section class="w-full h-screen bg-[#F6F1E9] flex items-center justify-center" id="home">
-    <h1 class="home-text w-[70%] text-5xl lg:text-7xl 2xl:text-8xl text-center text-[#FF9A00] font-bold tracking-normal">Welcome to my
-      website, Let me introduce myself as a <span class="text-[#4F200D]">Frontend Developer.</span></h1>
+  <section class="w-full h-screen transition-colors duration-500 bg-[#F6F1E9] dark:bg-[#181818] flex items-center justify-center" id="home">
+    <h1 class="home-text w-[70%] text-5xl lg:text-7xl 2xl:text-8xl text-center text-[#FF9A00] dark:text-[#e4f7df] transition-colors duration-500 font-bold tracking-normal">Welcome to my
+      website, Let me introduce myself as a <span class="text-[#4F200D] dark:text-[#06923E] transition-colors duration-500">Frontend Developer.</span></h1>
   </section>
 
   <!-- about section -->
-  <section class="w-full h-screen bg-[#FFF] flex flex-col-reverse md:flex-row items-center justify-start" id="about">
+  <section class="w-full h-screen bg-[#FFF] dark:bg-[#222222] transition-colors duration-500 flex flex-col-reverse md:flex-row items-center justify-start" id="about">
     <div class="w-full md:w-[50%] h-full flex flex-col items-start justify-start md:justify-center ps-10 md:ps-20">
-      <h1 class="about-text-1 text-3xl lg:text-5xl 2xl:text-6xl font-bold tracking-wide text-[#4F200D]">I'm <span class="text-[#FF9A00]">Ridho Sulistyo
+      <h1 class="about-text-1 text-3xl lg:text-5xl 2xl:text-6xl font-bold tracking-wide text-[#4F200D] dark:text-[#e4f7df] transition-colors duration-500">I'm <span class="text-[#FF9A00] dark:text-[#06923E] transition-colors duration-500">Ridho Sulistyo
           S</span>
         <br>a Frontend Developer
       </h1>
-      <p class="about-text-2 mt-4 lg:mt-3 2xl:mt-5 text-sm md:text-md 2xl:text-xl text-[#4F200D]">I am a frontend developer, I graduated from SMK TI
+      <p class="about-text-2 mt-4 lg:mt-3 2xl:mt-5 text-sm md:text-md 2xl:text-xl text-[#4F200D] dark:text-[#e4f7df] transition-colors duration-500">I am a frontend developer, I graduated from SMK TI
         Pembangunan Cimahi, and currently I am studying at Bandung State Polytechnic majoring in Informatics
         Engineering.</p>
       <div class="about-social-media w-full h-auto flex items-center justify-start gap-3 mt-3">
         <a href="https://www.instagram.com/riidhooss" target="_blank"
-          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-instagram"></i></a>
+          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] dark:text-[#e4f7df] duration-500 transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ridhosulistyo1302@gmail.com" target="_blank"
-          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-solid fa-envelope"></i></a>
+          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] dark:text-[#e4f7df] duration-500 transition-all hover:text-[#FF9A00]"><i class="fa-solid fa-envelope"></i></a>
         <a href="https://x.com/poewfearly" target="_blank"
-          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-x-twitter"></i></a>
+          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] dark:text-[#e4f7df] duration-500 transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-x-twitter"></i></a>
         <a href="https://github.com/Ridhoss" target="_blank"
-          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-github"></i></a>
+          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] dark:text-[#e4f7df] duration-500 transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/ridhoss" target="_blank"
-          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-linkedin"></i></a>
+          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] dark:text-[#e4f7df] duration-500 transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://gitlab.com/Ridhoss" target="_blank"
-          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-gitlab"></i></a>
+          class="text-2xl lg:text-2xl 2xl:text-3xl text-[#4F200D] dark:text-[#e4f7df] duration-500 transition-all hover:text-[#FF9A00]"><i class="fa-brands fa-gitlab"></i></a>
       </div>
     </div>
     <div class="w-full md:w-[50%] h-full flex items-center justify-center">
       <div
-        class="about-image w-[80vw] md:w-[30vw] h-[50vw] md:h-[30vw] bg-[#FF9A00] rounded-3xl flex items-center justify-center shadow-[#FF9A00] shadow-2xl">
+        class="about-image w-[80vw] md:w-[30vw] h-[50vw] md:h-[30vw] bg-[#FF9A00] dark:bg-[#06923E] transition-all duration-500 rounded-3xl flex items-center justify-center shadow-[#FF9A00] dark:shadow-[#06923E] shadow-2xl">
         <img src="assets/img/dormv.png" alt="Photo Profile" class="w-full h-full object-contain">
       </div>
     </div>
@@ -125,11 +128,18 @@
 
   <!-- education section -->
   <section class="w-full h-screen relative overflow-hidden flex flex-col items-center justify-start pt-30" id="education">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="absolute left-0 -top-3 lg:-top-10 z-10">
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="absolute opacity-100 dark:opacity-0 transition-all duration-700 left-0 -top-3 lg:-top-10 z-10">
       <path fill="#fff" fill-opacity="1"
         d="M0,128L60,122.7C120,117,240,107,360,90.7C480,75,600,53,720,80C840,107,960,181,1080,202.7C1200,224,1320,192,1380,176L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
       </path>
     </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="opacity-0 dark:opacity-100 transition-all duration-700 absolute left-0 -top-3 lg:-top-10 z-10">
+      <path fill="#222222" fill-opacity="1"
+        d="M0,128L60,122.7C120,117,240,107,360,90.7C480,75,600,53,720,80C840,107,960,181,1080,202.7C1200,224,1320,192,1380,176L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+      </path>
+    </svg>
+
     <div class="w-full bg-gray-700 h-screen opacity-80 -z-10 absolute top-0"></div>
 
     <h1 class="title-education text-white text-4xl lg:text-5xl 2xl:text-6xl font-extrabold uppercase tracking-wide mt-2 lg:mt-6 2xl:mt-10 z-10">Education</h1>
@@ -138,36 +148,36 @@
     <div class="w-full h-full flex flex-col lg:flex-row items-center justify-evenly mt-0 lg:mt-3">
 
       <div
-        class="card-education-1 w-[80vw] md:w-[50vw] lg:w-[35vw] h-[35vh] md:h-[35vh] lg:h-[55vh] bg-white rounded-2xl overflow-hidden border-4 border-gray-700 shadow-xl shadow-gray-800 relative">
+        class="card-education-1 w-[80vw] md:w-[50vw] lg:w-[35vw] h-[35vh] md:h-[35vh] lg:h-[55vh] bg-white dark:bg-[#222222] transition-colors duration-500 rounded-2xl overflow-hidden border-4 border-gray-700 dark:border-[#222222] shadow-xl shadow-gray-800 relative">
         <div class="w-full h-[50%] md:h-[60%] relative">
           <img src="assets/img/smkti.jpg" alt="SMK TI Pembangunan Cimahi" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-gray-700 opacity-70"></div>
           <img src="assets/img/logo/logo-ti.png" alt="SMK TI Pembangunan Cimahi"
             class="absolute w-[30%] h-auto top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
         </div>
-        <h1 class="text-lg lg:text-xl 2xl:text-3xl font-extrabold uppercase text-center mt-5 tracking-normal text-gray-700">SMK TI Pembangunan
+        <h1 class="text-lg lg:text-xl 2xl:text-3xl font-extrabold uppercase text-center mt-5 tracking-normal text-gray-700 dark:text-[#06923E] transition-colors duration-500">SMK TI Pembangunan
           Cimahi</h1>
-        <h2 class="ms-4 lg:mt-3 2xl:mt-5 text-sm lg:text-md 2xl:text-xl font-bold text-gray-700">Rekayasa Perangkat Lunak (RPL)</h2>
-        <p class="ms-4 mt-0 text-sm lg:text-md 2xl:text-xl text-gray-700">2021 - 2023</p>
+        <h2 class="ms-4 lg:mt-3 2xl:mt-5 text-sm lg:text-md 2xl:text-xl font-bold text-gray-700 dark:text-[#e4f7df] transition-colors duration-500">Rekayasa Perangkat Lunak (RPL)</h2>
+        <p class="ms-4 mt-0 text-sm lg:text-md 2xl:text-xl text-gray-700 dark:text-[#e4f7df] transition-colors duration-500">2021 - 2023</p>
         <a href="https://www.smktipembangunan.sch.id" target="_blank"
-          class="text-sm 2xl:text-lg absolute bottom-5 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+          class="text-sm 2xl:text-lg absolute bottom-5 right-5 bg-gray-700 dark:bg-[#06923E] p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
           More</a>
       </div>
 
       <div
-        class="card-education-2 w-[80vw] md:w-[50vw] lg:w-[35vw] h-[35vh] md:h-[35vh] lg:h-[55vh] bg-white rounded-2xl overflow-hidden border-4 border-gray-700 shadow-xl shadow-gray-800 relative">
+        class="card-education-2 w-[80vw] md:w-[50vw] lg:w-[35vw] h-[35vh] md:h-[35vh] lg:h-[55vh] bg-white dark:bg-[#222222] transition-colors duration-500 rounded-2xl overflow-hidden border-4 border-gray-700 dark:border-[#222222] shadow-xl shadow-gray-800 relative">
         <div class="w-full h-[50%] md:h-[60%] relative">
           <img src="assets/img/polban.webp" alt="Politeknik Negeri Bandung" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-gray-700 opacity-70"></div>
           <img src="assets/img/logo/polban.png" alt="Politeknik Negeri Bandung"
             class="absolute w-[30%] h-auto top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
         </div>
-        <h1 class="text-lg lg:text-xl 2xl:text-3xl font-extrabold uppercase text-center mt-5 tracking-normal text-gray-700">Politeknik Negeri
+        <h1 class="text-lg lg:text-xl 2xl:text-3xl font-extrabold uppercase text-center mt-5 tracking-normal text-gray-700 dark:text-[#06923E] transition-colors duration-500">Politeknik Negeri
           Bandung</h1>
-        <h2 class="ms-4 lg:mt-3 2xl:mt-5 text-sm lg:text-md 2xl:text-xl font-bold text-gray-700">D3 Teknik Informatika</h2>
-        <p class="ms-4 mt-0 text-sm lg:text-md 2xl:text-xl text-gray-700">2024 - Now</p>
+        <h2 class="ms-4 lg:mt-3 2xl:mt-5 text-sm lg:text-md 2xl:text-xl font-bold text-gray-700 dark:text-[#e4f7df] transition-colors duration-500">D3 Teknik Informatika</h2>
+        <p class="ms-4 mt-0 text-sm lg:text-md 2xl:text-xl text-gray-700 dark:text-[#e4f7df] transition-colors duration-500">2024 - Now</p>
         <a href="https://www.polban.ac.id" target="_blank"
-          class="lg:text-sm 2xl:text-lg absolute bottom-5 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+          class="lg:text-sm 2xl:text-lg absolute bottom-5 right-5 bg-gray-700 dark:bg-[#06923E] p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
           More</a>
       </div>
 
@@ -182,25 +192,25 @@
     <div class="card-experience w-screen lg:w-[60%] h-full flex flex-col items-center lg:justify-center justify-start gap-10 p-5 md:p-10">
 
       <div
-        class="card-experience-1 w-full h-60 bg-white rounded-xl flex items-center px-10 border-3 border-gray-700 shadow-xl shadow-gray-800 relative">
+        class="card-experience-1 w-full h-60 bg-white dark:bg-[#222222] transition-colors duration-500 rounded-xl flex items-center px-10 border-3 border-gray-700 shadow-xl shadow-gray-800 relative">
         <img src="assets/img/logo/uwu.png" alt="Institute Teknologi Bandung (ITB)" class="h-[40%] md:h-[80%] w-auto">
         <div class="ms-10">
-          <h1 class="text-md lg:text-2xl 2xl:text-3xl font-extrabold">Frontend Developer</h1>
-          <h2 class="text-sm lg:text-xl 2xl:text-2xl font-bold">Nolf.dev Team</h2>
-          <h3 class="text-sm lg:text-md 2xl:text-lg">Freelance</h3>
-          <p class="text-sm g:text-md 2xl:text-lg">2024 - Now</p>
+          <h1 class="text-md lg:text-2xl 2xl:text-3xl font-extrabold dark:text-[#06923E] transition-colors duration-500">Frontend Developer</h1>
+          <h2 class="text-sm lg:text-xl 2xl:text-2xl font-bold dark:text-[#06923E] transition-colors duration-500">Nolf.dev Team</h2>
+          <h3 class="text-sm lg:text-md 2xl:text-lg dark:text-[#e4f7df] transition-colors duration-500">Freelance</h3>
+          <p class="text-sm g:text-md 2xl:text-lg dark:text-[#e4f7df] transition-colors duration-500">2024 - Now</p>
         </div>
       </div>
 
       <div
-        class="card-experience-2 w-full h-60 bg-white rounded-xl flex items-center px-10 border-3 border-gray-700 shadow-xl shadow-gray-800 relative">
+        class="card-experience-2 w-full h-60 bg-white dark:bg-[#222222] transition-colors duration-500 rounded-xl flex items-center px-10 border-3 border-gray-700 shadow-xl shadow-gray-800 relative">
         <img src="assets/img/logo/Logo_Institut_Teknologi_Bandung.png" alt="Institute Teknologi Bandung (ITB)"
           class="h-[40%] md:h-[80%] w-auto">
         <div class="ms-10">
-          <h1 class="text-md lg:text-2xl 2xl:text-3xl font-extrabold">Information Technology Assistant</h1>
-          <h2 class="text-sm lg:text-xl 2xl:text-2xl font-bold">Institute Teknologi Bandung (ITB)</h2>
-          <h3 class="text-sm lg:text-md 2xl:text-lg">Internship</h3>
-          <p class="text-sm lg:text-md 2xl:text-lg">2024 - 2024</p>
+          <h1 class="text-md lg:text-2xl 2xl:text-3xl font-extrabold dark:text-[#06923E] transition-colors duration-500">Information Technology Assistant</h1>
+          <h2 class="text-sm lg:text-xl 2xl:text-2xl font-bold dark:text-[#06923E] transition-colors duration-500">Institute Teknologi Bandung (ITB)</h2>
+          <h3 class="text-sm lg:text-md 2xl:text-lg dark:text-[#e4f7df] transition-colors duration-500">Internship</h3>
+          <p class="text-sm lg:text-md 2xl:text-lg dark:text-[#e4f7df] transition-colors duration-500">2024 - 2024</p>
         </div>
       </div>
 
@@ -241,10 +251,10 @@
       <div class="w-full lg:w-[40%] h-full flex items-center justify-center">
         <!-- card skills -->
         <div
-          class="skills-card mt-5 lg:mt-0 w-[80%] md:w-[70%] lg:w-[60%] h-auto bg-white rounded-2xl p-10 flex flex-col gap-1 lg:gap-2 2xl:gap-5 justify-center border-3 border-gray-700 shadow-xl shadow-gray-800">
+          class="skills-card mt-5 lg:mt-0 w-[80%] md:w-[70%] lg:w-[60%] h-auto bg-white dark:bg-[#222222] transition-colors duration-500 rounded-2xl p-10 flex flex-col gap-1 lg:gap-2 2xl:gap-5 justify-center border-3 border-gray-700 shadow-xl shadow-gray-800">
 
           <div>
-            <span class="font-bold lg:text-md 2xl:text-xl">Communication</span>
+            <span class="font-bold lg:text-md 2xl:text-xl dark:text-[#e4f7df] transition-colors duration-500">Communication</span>
             <div class="w-full bg-gray-200 rounded-full lg:h-6 mt-3 lg:mt-2 2xl:mt-3">
               <div class="skills-1 bg-red-600 lg:h-6 rounded-full text-center text-white text-sm lg:text-xs 2xl:text-sm font-medium leading-6"
                 style="width: 0%;">
@@ -254,7 +264,7 @@
           </div>
 
           <div>
-            <span class="font-bold lg:text-md 2xl:text-xl">Problem Solving</span>
+            <span class="font-bold lg:text-md 2xl:text-xl dark:text-[#e4f7df] transition-colors duration-500">Problem Solving</span>
             <div class="w-full bg-gray-200 rounded-full lg:h-6 mt-3 lg:mt-2 2xl:mt-3">
               <div class="skills-2 bg-green-600 lg:h-6 rounded-full text-center text-white text-sm lg:text-xs 2xl:text-sm font-medium leading-6"
                 style="width: 0%;">
@@ -264,7 +274,7 @@
           </div>
 
           <div>
-            <span class="font-bold lg:text-md 2xl:text-xl">Team Work</span>
+            <span class="font-bold lg:text-md 2xl:text-xl dark:text-[#e4f7df] transition-colors duration-500">Team Work</span>
             <div class="w-full bg-gray-200 rounded-full lg:h-6 mt-3 lg:mt-2 2xl:mt-3">
               <div class="skills-3 bg-blue-600 lg:h-6 rounded-full text-center text-white text-sm lg:text-xs 2xl:text-sm font-medium leading-6"
                 style="width: 0%;">
@@ -274,7 +284,7 @@
           </div>
 
           <div>
-            <span class="font-bold lg:text-md 2xl:text-xl">Leadership</span>
+            <span class="font-bold lg:text-md 2xl:text-xl dark:text-[#e4f7df] transition-colors duration-500">Leadership</span>
             <div class="w-full bg-gray-200 rounded-full lg:h-6 mt-3 lg:mt-2 2xl:mt-3">
               <div class="skills-4 bg-yellow-600 lg:h-6 rounded-full text-center text-white text-sm lg:text-xs 2xl:text-sm font-medium leading-6"
                 style="width: 0%;">
@@ -284,7 +294,7 @@
           </div>
 
           <div>
-            <span class="font-bold lg:text-md 2xl:text-xl">Discipline and responsibility</span>
+            <span class="font-bold lg:text-md 2xl:text-xl dark:text-[#e4f7df] transition-colors duration-500">Discipline and responsibility</span>
             <div class="w-full bg-gray-200 rounded-full lg:h-6 mt-3 lg:mt-2 2xl:mt-3">
               <div class="skills-5 bg-cyan-600 lg:h-6 rounded-full text-center text-white text-sm lg:text-xs 2xl:text-sm font-medium leading-6"
                 style="width: 0%;">
@@ -294,7 +304,7 @@
           </div>
 
           <div>
-            <span class="font-bold lg:text-md 2xl:text-xl">Time Management</span>
+            <span class="font-bold lg:text-md 2xl:text-xl dark:text-[#e4f7df] transition-colors duration-500">Time Management</span>
             <div class="w-full bg-gray-200 rounded-full lg:h-6 mt-3 lg:mt-2 2xl:mt-3">
               <div class="skills-6 bg-purple-600 lg:h-6 rounded-full text-center text-white text-sm lg:text-xs 2xl:text-sm font-medium leading-6"
                 style="width: 0%;">
@@ -311,8 +321,8 @@
   </section>
 
   <!-- portfolio -->
-  <section class="w-full h-auto md:h-screen bg-white flex flex-col" id="portfolio">
-    <h1 class="portfolio-title text-center text-4xl lg:text-5xl 2xl:text-6xl font-extrabold uppercase mt-20 text-[#4F200D]">Portfolio</h1>
+  <section class="w-full h-auto md:h-screen bg-white dark:bg-[#222222] transition-colors duration-500 flex flex-col" id="portfolio">
+    <h1 class="portfolio-title text-center text-4xl lg:text-5xl 2xl:text-6xl font-extrabold uppercase mt-20 text-[#4F200D] dark:text-[#e4f7df] transition-colors duration-500">Portfolio</h1>
     
     <div class="md:hidden relative flex flex-col gap-5 items-center justify-center mt-10">
       <div class="w-[80vw] h-[80vw] relative bg-white border-3 border-gray-800 rounded-xl overflow-hidden shadow-2xl shadow-gray-800"
@@ -322,7 +332,7 @@
             <h1 class="text-lg font-bold">Bioskop Ticketing Aplication</h1>
             <p>2022</p>
             <a href="https://github.com/Ridhoss/Bioskop.git" target="_blank"
-              class="absolute bottom-4 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+              class="absolute bottom-4 right-5 bg-gray-700 dark:bg-[#06923E] duration-500 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
               More</a>
           </div>
         </div>
@@ -334,7 +344,7 @@
             <h1 class="text-lg font-bold">Library book management application</h1>
             <p>2023</p>
             <a href="https://github.com/Ridhoss/perpustakaan-SMK-TIP.git" target="_blank"
-              class="absolute bottom-4 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+              class="absolute bottom-4 right-5 bg-gray-700 dark:bg-[#06923E] duration-500 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
               More</a>
           </div>
         </div>
@@ -346,7 +356,7 @@
             <h1 class="text-lg font-bold w-80">Management Photo application</h1>
             <p>2023</p>
             <a href="https://github.com/Ridhoss/Galeri-PoewArt.git" target="_blank"
-              class="absolute bottom-4 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+              class="absolute bottom-4 right-5 bg-gray-700 dark:bg-[#06923E] duration-500 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
               More</a>
           </div>
         </div>
@@ -358,7 +368,7 @@
             <h1 class="text-lg font-bold">Idhosukahewan Company Profile</h1>
             <p>2024</p>
             <a href="https://idhosukahewan.com" target="_blank"
-              class="absolute bottom-4 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+              class="absolute bottom-4 right-5 bg-gray-700 dark:bg-[#06923E] duration-500 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
               More</a>
           </div>
         </div>
@@ -374,7 +384,7 @@
             <h1 class="text-lg font-bold">Bioskop Ticketing Aplication</h1>
             <p>2022</p>
             <a href="https://github.com/Ridhoss/Bioskop.git" target="_blank"
-              class="absolute bottom-4 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+              class="absolute bottom-4 right-5 bg-gray-700 dark:bg-[#06923E] duration-500 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
               More</a>
           </div>
         </div>
@@ -386,7 +396,7 @@
             <h1 class="text-lg font-bold">Library book management application</h1>
             <p>2023</p>
             <a href="https://github.com/Ridhoss/perpustakaan-SMK-TIP.git" target="_blank"
-              class="absolute bottom-4 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+              class="absolute bottom-4 right-5 bg-gray-700 dark:bg-[#06923E] duration-500 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
               More</a>
           </div>
         </div>
@@ -398,7 +408,7 @@
             <h1 class="text-lg font-bold w-80">Management Photo application</h1>
             <p>2023</p>
             <a href="https://github.com/Ridhoss/Galeri-PoewArt.git" target="_blank"
-              class="absolute bottom-4 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+              class="absolute bottom-4 right-5 bg-gray-700 dark:bg-[#06923E] duration-500 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
               More</a>
           </div>
         </div>
@@ -410,7 +420,7 @@
             <h1 class="text-lg font-bold">Idhosukahewan Company Profile</h1>
             <p>2024</p>
             <a href="https://idhosukahewan.com" target="_blank"
-              class="absolute bottom-4 right-5 bg-gray-700 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
+              class="absolute bottom-4 right-5 bg-gray-700 dark:bg-[#06923E] duration-500 p-2 rounded text-white transition-all hover:bg-gray-900 hover:scale-105">See
               More</a>
           </div>
         </div>
@@ -420,8 +430,8 @@
   </section>
 
   <!-- gallery -->
-  <section class="w-full h-full bg-white flex flex-col pb-20">
-    <h1 class="gallery-title text-center text-4xl lg:text-5xl 2xl:text-6xl font-extrabold uppercase mt-20 text-[#4F200D]">Aplication Gallery</h1>
+  <section class="w-full h-full bg-white dark:bg-[#222222] transition-colors duration-500 flex flex-col pb-20">
+    <h1 class="gallery-title text-center text-4xl lg:text-5xl 2xl:text-6xl font-extrabold uppercase mt-20 text-[#4F200D] dark:text-[#e4f7df] transition-colors duration-500">Aplication Gallery</h1>
     <div class="gallery-photo w-full h-full flex items-start justify-evenly mt-10 lg:mt-10 2xl:mt-20 flex-wrap">
       <img src="assets/img/aplication/pre1.jpg" alt="App Photo" class="w-[80%] md:w-[30%] h-auto rounded-xl my-5">
       <img src="assets/img/aplication/pre2.jpg" alt="App Photo" class="w-[80%] md:w-[30%] h-auto rounded-xl my-5">
@@ -439,23 +449,23 @@
     </div>
   </section>
 
-  <div class="w-full h-full md:h-60 2xl:h-70 bg-white overflow-hidden">
-    <div class="footer w-full h-full bg-[#F6F1E9] px-5 md:px-10 lg:px-30 flex flex-col md:flex-row items-center justify-between" id="contact">
+  <div class="w-full h-full md:h-60 2xl:h-70 bg-white dark:bg-[#181818] transition-colors duration-500 overflow-hidden">
+    <div class="footer w-full h-full bg-[#F6F1E9] dark:bg-[#181818] transition-colors duration-500 px-5 md:px-10 lg:px-30 flex flex-col md:flex-row items-center justify-between" id="contact">
       <div class="h-full">
-        <h1 class="text-2xl lg:text-3xl font-extrabold pt-10 text-[#4F200D]">Contact Me</h1>
-        <p class="text-sm lg:text-md text-[#4F200D]">Feel free to reach out for collaborations or just a friendly hello!</p>
+        <h1 class="text-2xl lg:text-3xl font-extrabold pt-10 text-[#4F200D] dark:text-[#06923E] transition-colors duration-500">Contact Me</h1>
+        <p class="text-sm lg:text-md text-[#4F200D] dark:text-[#e4f7df] transition-colors duration-500">Feel free to reach out for collaborations or just a friendly hello!</p>
         <ul class="ms-4 mt-3 flex flex-col gap-0 lg:gap-1 h-[50%] w-full flex-wrap pb-2">
-          <li><a href="https://www.instagram.com/riidhooss" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] transition-all hover:text-[#FF9A00]">Instagram</a></li>
-          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=ridhosulistyo1302@gmail.com" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] transition-all hover:text-[#FF9A00]">Email</a></li>
-          <li><a href="https://github.com/Ridhoss" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] transition-all hover:text-[#FF9A00]">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/ridhoss" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] transition-all hover:text-[#FF9A00]">LinkedIn</a></li>
-          <li><a href="https://x.com/poewfearly" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] transition-all hover:text-[#FF9A00]">X / Twitter</a></li>
-          <li><a href="https://gitlab.com/Ridhoss" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] transition-all hover:text-[#FF9A00]">GitLab</a></li>
+          <li><a href="https://www.instagram.com/riidhooss" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] dark:text-[#e4f7df] transition-colors duration-500 transition-all hover:text-[#FF9A00]">Instagram</a></li>
+          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=ridhosulistyo1302@gmail.com" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] dark:text-[#e4f7df] transition-colors duration-500 transition-all hover:text-[#FF9A00]">Email</a></li>
+          <li><a href="https://github.com/Ridhoss" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] dark:text-[#e4f7df] transition-colors duration-500 transition-all hover:text-[#FF9A00]">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/ridhoss" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] dark:text-[#e4f7df] transition-colors duration-500 transition-all hover:text-[#FF9A00]">LinkedIn</a></li>
+          <li><a href="https://x.com/poewfearly" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] dark:text-[#e4f7df] transition-colors duration-500 transition-all hover:text-[#FF9A00]">X / Twitter</a></li>
+          <li><a href="https://gitlab.com/Ridhoss" target="_blank" class="md:text-sm lg:text-lg text-[#4F200D] dark:text-[#e4f7df] transition-colors duration-500 transition-all hover:text-[#FF9A00]">GitLab</a></li>
         </ul>
       </div>
       <div class="h-full mt-5 mb-5 md:mt-0 md:mb-0 flex items-center md:items-end justify-center flex-col">
-        <h1 class="text-xl md:text-3xl font-bold text-[#4F200D]">Poewfearly</h1>
-        <p class="text-sm md:text-lg text-[#4F200D]">© 2025 Domastic. All rights reserved.</p>
+        <h1 class="text-xl md:text-3xl font-bold text-[#4F200D] dark:text-[#06923E] transition-colors duration-500">Poewfearly</h1>
+        <p class="text-sm md:text-lg text-[#4F200D] dark:text-[#e4f7df] transition-colors duration-500">© 2025 Domastic. All rights reserved.</p>
       </div>
     </div>
   </div>

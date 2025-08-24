@@ -4,6 +4,8 @@
   --font-manrope: "Manrope", sans-serif;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 * {
   font-family: var(--font-manrope);
   scroll-behavior: smooth;

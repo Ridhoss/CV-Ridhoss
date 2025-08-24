@@ -21,6 +21,40 @@ btnClose.addEventListener("click", () => {
 })
 // sidebar action end
 
+// dark mode
+const btnLight = document.getElementById("btn-light");
+const btnDark = document.getElementById("btn-dark");
+const html = document.documentElement;
+
+if (localStorage.getItem("theme") === "dark") {
+  html.classList.add("dark");
+  btnDark.style.display = "none";
+  btnLight.style.display = "inline-block";
+} else {
+  btnLight.style.display = "none";
+  btnDark.style.display = "inline-block";
+}
+
+btnDark.addEventListener("click", () => {
+  animate(btnDark, { rotate: 360 })
+  animate(btnLight, { rotate: 360 })
+  html.classList.add("dark");
+  localStorage.setItem("theme", "dark");
+  btnDark.style.display = "none";
+  btnLight.style.display = "inline-block";
+});
+
+btnLight.addEventListener("click", () => {
+  animate(btnDark, { rotate: -360 })
+  animate(btnLight, { rotate: -360 })
+  html.classList.remove("dark");
+  localStorage.setItem("theme", "light");
+  btnLight.style.display = "none";
+  btnDark.style.display = "inline-block";
+});
+// dark mode end
+
+
 
 // home
 inView(".home-text", (element) => {
